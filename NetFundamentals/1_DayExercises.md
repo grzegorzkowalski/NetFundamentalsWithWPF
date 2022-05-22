@@ -4,11 +4,12 @@
 
 #### Zadanie 1
 
-Stwórz w solucji nowy projekt typu Console App (.Net Core).
+Stwórz w projekcie NetFundamentals nową klasę Tasks. Jeżeli polecenie nie stanowi inaczej dodawaj kolejne zadania w formie metod klasy Task. 
+Metody wywołuj w klasie `Main`.
 
 #### Zadanie 2
 
-W metodzie `Main` umieść następujący kod:
+Stwórz następujący kod:
 ```csharp
 Console.WriteLine("Podaj swoje imię:");
 var name = Console.ReadLine();
@@ -18,7 +19,7 @@ Console.WriteLine("Hello " + name);
 
 #### Zadanie 3
 
-W metodzie `Main` umieść następujący kod:
+Stwórz następujący kod:
 ```csharp
 int result = 5 + 9
 ```
@@ -38,7 +39,7 @@ Npisz program, który dla trzech liczb a,b,c wprowadzonych z klawiatury sprawdza
 
 #### Zadanie 1
 
-1. W metodzie `Main` utwórz 6 zmiennych.
+1. Utwórz 6 zmiennych.
 1. Każda zmienna powinna przechowywać odpowiednio dobrany przez Ciebie typ danych na podstawie opisu.
 1. Wartości mogą być dowolne.
 * Zmienna o nazwie `number` przechowująca liczbę całkowitą.
