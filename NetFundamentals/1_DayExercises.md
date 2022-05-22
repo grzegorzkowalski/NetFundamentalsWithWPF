@@ -31,7 +31,7 @@ int result = 5 + 9
 Napisz program, któy oblicza objętość kuli o promieniu `r`. Wartość promienia `r` wprowadzamy z kawiatury. W programie należy przyjąć, że zmienne promień `r` i `objetosc` są typu `double`. 
 Dla tych zmiennych należy przyjąć formatwyświetlania ich na ekranie z dokładnością do dwóhc miejsc po przecinku. 
 
-#### Zadanie 4 ekstra
+#### Zadanie 5 ekstra
 
 Npisz program, który dla trzech liczb a,b,c wprowadzonych z klawiatury sprawdza, czy tworzą one trójkąt pitagorejski.
 

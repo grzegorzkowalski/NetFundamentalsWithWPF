@@ -5,7 +5,9 @@
         static void Main(string[] args)
         {
             var tasks = new Tasks();
-            tasks.Task1();
+            //tasks.Task2();
+            //tasks.Task3();
+            tasks.Task4();
         }
     }
 }
