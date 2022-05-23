@@ -195,14 +195,14 @@ Liczba: 1
 #### Zadanie 3 *dodatkowe
 
 1. Utwórz czteroelementową listę `List<string>` o nazwie `fruits`.
-1. Tablicę uzupełnij dowolnymi nazwami owoców, używając metody remove.
+1. Tablicę uzupełnij dowolnymi nazwami owoców, używając metody add.
 1. Wyświetl w konsoli wszystkie owoce według wzoru `Pomidor, Jabłko, Marchewka`. Między nazwami owoców musi się znaleźć przecinek i spacja.
 4. Usuń za pomocą metod `Revome i RemoveAt` pierwszy i ostatni element listy.
 5. Wyświetl wszystkie elementy listy.
 
 #### Zadanie 4 ekstra
 
-Koszystając z właściwości kolekcji ArrayList(), napisz program, który do kolekcji tego typudodaje sześć liczb,a następnie je sortuj. Po wykonaniu tej operacji należy dokonać 
+Koszystając z właściwości kolekcji ArrayList(), napisz program, który do kolekcji tego typu dodaje sześć liczb,a następnie je sortuj. Po wykonaniu tej operacji należy dokonać 
 usunięcia drugiego elementu z listy, dodać nowy element do listy i dokonać ponownego sortowania. 
 
 
