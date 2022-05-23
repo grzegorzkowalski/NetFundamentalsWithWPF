@@ -36,5 +36,27 @@ namespace NetFundamentals
             Console.WriteLine($"Objętość kuli o r {r} wynosi {Math.Round(objetosc, 2)}");
 
         }
+
+        //Npisz program, który dla trzech liczb a,b,c wprowadzonych z klawiatury sprawdza, czy tworzą one trójkąt pitagorejski.
+
+        internal void Task5()
+        {
+            int a, b, c;
+
+            Console.WriteLine("Podaj liczbę a");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj liczbę b");
+            b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj liczbę c");
+            c = int.Parse(Console.ReadLine());
+            if ((a*a + b*b) == c*c)
+            {
+                Console.WriteLine("Trójkąt pitagorejski");
+            }
+            else
+            {
+                Console.WriteLine("Liczby nie tworzą trójkąta pitagorejskiego");
+            }
+        }
     }
 }

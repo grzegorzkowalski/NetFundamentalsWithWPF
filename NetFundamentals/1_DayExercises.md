@@ -155,12 +155,12 @@ Przykład: Dla point z wartością `57`, w konsoli powinno wyświetlić się `Oc
 
 #### Zadanie 5 ekstra
 
-Napisz program, który za pomocą instrukcj for sumuje liczby nieparzyste z przedizału od 1 do 100.
+Napisz program, który za pomocą instrukcj for sumuje liczby nieparzyste z przedziału od 1 do 100.
 
 
 #### Zadanie 6 ekstra
 
-Napisz program, któy za pomocą instrukcji for znajduje największą i najmniejszą liczbę ze zbioru `n` wylosowanych liczb całkowitych z przedziału od 0 do 99 (w zadaniu n = 5)
+Napisz program, który za pomocą instrukcji for znajduje największą i najmniejszą liczbę ze zbioru `n` wylosowanych liczb całkowitych z przedziału od 0 do 99 (w zadaniu n = 5)
 oraz oblicza średnią ze wszystkich wylosowanycg liczb.
 
 #### Zadanie 7 ekstra
@@ -170,7 +170,7 @@ Napisz program wyświetlający tabliczkę mnożenia dla liczb z przedziału od 1
 
 #### Zadanie 8 ekstra
 
-Napisz program, tóry wyświetla duże litery alfabetu od A do Z i od Z do A z wykorzystaniem pętli while. 
+Napisz program, który wyświetla duże litery alfabetu od A do Z i od Z do A z wykorzystaniem pętli while. 
 
 ### Kolekcje
 
@@ -202,7 +202,7 @@ Liczba: 1
 
 #### Zadanie 4 ekstra
 
-Koszystając z właściwości kolekcji ArrayList(), napisz program, który do kolekcji tego typudodaje sześć liczb,a następnie je sortuj. Po wykonaniu tej operacji należy dokonać 
+Koszystając z właściwości kolekcji ArrayList(), napisz program, który do kolekcji tego typu dodaje sześć liczb,a następnie je sortuj. Po wykonaniu tej operacji należy dokonać 
 usunięcia drugiego elementu z listy, dodać nowy element do listy i dokonać ponownego sortowania. 
 
 
