@@ -2,7 +2,7 @@
 
 namespace Persistence
 {
-    public class BooksRepository
+    public class BooksRepository : BaseRepository<Book>
     {
         readonly private List<Book> _database;
 
@@ -22,15 +22,15 @@ namespace Persistence
             };
         }
 
-        public void Insert(Book book)
-        {
-            _database.Add(book);
-        }
+        //public void Insert(Book book)
+        //{
+        //    _database.Add(book);
+        //}
 
-        public List<Book> GetAll()
-        {
-            return _database;
-        }
+        //public List<Book> GetAll()
+        //{
+        //    return _database;
+        //}
 
         public void RemoveByTitle(string title)
         {
@@ -41,7 +41,7 @@ namespace Persistence
         public void ChangeState(string title, int stateChange)
         {
             var changeBook = _database.First(s => s.Title == title);
-            changeBook.ProductsAvailable += stateChange;
+            changeBook.ChangeProductsAvailableNumber(stateChange);
         }
     }
 }

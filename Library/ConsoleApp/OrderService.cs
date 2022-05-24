@@ -37,11 +37,7 @@ namespace ConsoleApp
                     if (repository.GetAll().Exists(s => s.ISBN.Equals(orderId)) 
                         && repository.GetAll().Count() < order.BooksOrderList.Count)
                     {
-                        order.BooksOrderList.Add(new BookOrdered()
-                        {
-                            BookId = orderId,
-                            NumberOrdered = count
-                        });
+                        order.BooksOrderList.Add(new BookOrdered(orderId, count));
                     }
                 }
             }

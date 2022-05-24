@@ -31,7 +31,7 @@ Ciało funkcji mozesz skopiowac:
     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 15. Zaimplementuj metodę HandlerCommand(string command): void
 16. Przejdz do pliku Program.cs
-17. Ponizej utworzenia serwisów i repozytorium, stwórz obiekt klasy Processor
+17. Ponizej utworzenia serwisów i repozytorium, stwórz obiekt klasy Procesor
 18. Podefiniuj akcje procesora wykorzystując metodę RegisterNewAction
 _processor.RegisterNewAction(new Command(), new Handler(() => akcja))
 (W przypadku komendy "wyjdz", prosze uruchomic kod Enviroment.Exit(0) )
@@ -135,4 +135,22 @@ z danego typu, a następnie pobierze pole name
 29. Następnie za pomocą refleksji otrzyma informacje z Atrybutu Command (name, description)
 30. Za pomocą metody `.Select((x) => $"{x.Key} - {x.Value}");` wygeneruje tablice podpisów w menu
 31. za pomoca metody `string.join("\n", methods.ToArray());` zwróci menu aplikacji
-    
+
+## WPF
+
+#### Zadanie 1
+
+Używając kontrolek `Label`, `TextBox`, `Buton` napisz program, któy oblicza pole prostokątu. 
+
+#### Zadanie 2
+
+Używając kontrolek `Label`, `TextBox`, `Buton`, `ComboBox`, `CheckBox`, `Image`, stwórz konfigurator auta sojej ulubionej marki.
+
+
+#### Zadanie 3
+
+Używając znanych Ci kontrolek stwórz program lista produktów, do wspierania procesu zakupowego. Wymagania:
+- Dodaj produkt
+- Usuń produkt 
+- Edytuj produkt
+- Lista produktów

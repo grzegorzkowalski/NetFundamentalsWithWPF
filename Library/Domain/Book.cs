@@ -1,14 +1,14 @@
 ﻿namespace Domain
 {
-    public class Book
+    public class Book : BaseModel
     {
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public int PublicationYear { get; set; }
-        public string ISBN { get; set; }
+        public string Title { get; }
+        public string Author { get; }
+        public int PublicationYear { get; }
+        public string ISBN { get; }
 
-        public int ProductsAvailable { get; set; }
-        public decimal Price { get; set; }
+        public int ProductsAvailable { get; private set; }
+        public decimal Price { get; }
 
         public Book() { }
 
@@ -25,6 +25,11 @@
         public override string ToString()
         {
             return $"Title: {Title} Author: {Author} ProductsAvailable: {ProductsAvailable}";
+        }
+
+        public void ChangeProductsAvailableNumber(int change)
+        {
+            this.ProductsAvailable += change;
         }
     }
 }

@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace Persistence
 {
-    public class OrdersRepository
+    public class OrdersRepository : BaseRepository<Order>
     {
         private List<Order> database = new List<Order>();
 
-        public void Insert(Order order)
-        {
-            database.Add(order);
-        }
+        //public void Insert(Order order)
+        //{
+        //    database.Add(order);
+        //}
 
-        public List<Order> GetAll()
-        {
-            return database;
-        }
+        //public List<Order> GetAll()
+        //{
+        //    return database;
+        //}
     }
 }

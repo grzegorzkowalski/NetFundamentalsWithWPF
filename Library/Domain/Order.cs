@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Order
+    public class Order : BaseModel
     {
-        public DateTime Date { get; set; }
-        public List<BookOrdered> BooksOrderList { get; set; }
+        public DateTime Date { get; }
+        public List<BookOrdered> BooksOrderList { get; }
 
         public Order()
         {

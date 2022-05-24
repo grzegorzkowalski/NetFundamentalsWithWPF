@@ -149,14 +149,14 @@ Convert.ToInt32(Console.ReadLine());
 
 1. Otwórz plik Book.cs znajdujący się w projekcie Library.Domain
 2. Ze wszystkich property skasuj operator set. 
-3. Dla property `ProductsAvailable` do operator set wraz z modyfikatorem prywatnosci private
+3. Dla property `ProductsAvailable` dodaj operator set wraz z modyfikatorem prywatności private
 4. Dodaj do klasy Book nową metodę, która będzie odpowiedzialna za modyfikację stanu magazynowego. Tą metodę nazwij: `ChangeProductsAvailableNumber(int change)`
 5. Przejdź do pliku BooksRepository w projekcie Library.Persistence i w metodzie ChangeState zmień ustawienie property na wywołanie metody z klasy Book
 6. Przejdź do pliku Order.cs w projekcie Library.Domain
 7. W propertach skasuj słowo kluczowe set
 8. Przejdź do pliku BookOrdered w projekcie Library.Domain
-9. Skasuj słowo klucozwe set w propertach
-10. Stwórz konstruktor, który musi zawierac dwa argumenty: Book(int bookId, int numberOrdered)
+9. Skasuj słowo kluczowe set w propertach
+10. Stwórz konstruktor, który musi zawierac dwa argumenty: BookOrdered(int bookId, int numberOrdered)
 11. Otwórz plik OrderService znajdujacy sie w projekcie Library.ConsoleApp
 12. Zmien w lini gdzie jest dodawana nowa pozycja zamowienia inicjalizacje klasy BookOrdered tak aby była zgodna z tym co przed chwilą było zrobione.     
 

@@ -14,24 +14,27 @@ else
 {
     Console.WriteLine("Access Denied");  
 }
-/*
- 14. Przejdz do pliku `Program.cs` w projekcie Library.ConsoleApp
-15. Utwórz obiekt klasy `OrdersRepository` przed główną pętlą programu
-16. Utwórz obiekt klasy `OrdersService`, wykorzystując przy tym wczesniej utworzony obiekt klasy `OrdersRepository`
-17. Wykorzystaj obiekt klasy `OrdersService` aby podpiąc jego metody do zadan:
-    - dodaj zamowienie
-    - lista zamowien
-18. Uruchom aplikację Library.ConsoleApp w trybie debug-u
-19. Przetestuj czy dodawanie zamowien działa poprawnie
-20. *Zrób zabezpieczenie aby nie dało się dodac do zamówienia ksiazki, której nie ma na w repozytorium
-21. *Zrób zabezpieczenie aby do zamowienia nie dało się dodac więcej ksiązek, niz jest w repozytorium.
- */
 var repository = new BooksRepository();
 var booksService = new BooksService(repository);
 var orderRepository = new OrdersRepository();
 var orderService = new OrderService(orderRepository);
+var procesor = new Procesor();
+procesor.RegisterNewAction(new Command("dodaj", "dodaj książkę"), new Handler(() => booksService.AddBook()));
+procesor.RegisterNewAction(new Command("usun", "usun książkę"), new Handler(() => booksService.RemoveBook()));
+procesor.RegisterNewAction(new Command("wypisz", "wypisz książkę"), new Handler(() => booksService.ListBooks()));
+procesor.RegisterNewAction(new Command("zmien", "zmien stan"), new Handler(() => booksService.ChangeState()));
+procesor.RegisterNewAction(new Command("dodaj zamowienie", "dodaj zamowienie"), new Handler(() => orderService.PlaceOrder()));
+procesor.RegisterNewAction(new Command("lista zamowien", "lista zamowien"), new Handler(() => orderService.ListAll()));
+procesor.RegisterNewAction(new Command("wyjdz", "wyjdz"), new Handler(() => Environment.Exit(0)));
 var command = "";
 while(!command.Equals("wyjdz"))
+{
+    DisplayMenu();
+    command = Console.ReadLine();
+    NewMenuDisplay(procesor, command);
+}
+
+static void DisplayMenu()
 {
     Console.WriteLine("Menu:");
     Console.WriteLine("1. dodaj");
@@ -41,7 +44,21 @@ while(!command.Equals("wyjdz"))
     Console.WriteLine("5. dodaj zamowienie");
     Console.WriteLine("6. lista zamowien");
     Console.WriteLine("7. lista zamowien");
-    command = Console.ReadLine();
+}
+
+static void NewMenuDisplay(Procesor procesor, string? command)
+{
+    while (!command.Equals("wyjdz"))
+    {
+        Console.WriteLine(procesor.GetAllCommandsWithDescription());
+        command = Console.ReadLine();
+        procesor.HandlerCommand(command);
+        Console.Clear();
+    }
+}
+
+static void OldMenuDisplay(BooksService booksService, OrderService orderService, string? command)
+{
     switch (command)
     {
         case "dodaj":
@@ -50,7 +67,7 @@ while(!command.Equals("wyjdz"))
             Console.ReadKey();
             break;
         case "usun":
-            booksService.RemoveBook();          
+            booksService.RemoveBook();
             Console.WriteLine("Press AnyKey");
             Console.ReadKey();
             break;
@@ -80,5 +97,4 @@ while(!command.Equals("wyjdz"))
             Console.ReadKey();
             break;
     }
-    Console.Clear();    
 }
