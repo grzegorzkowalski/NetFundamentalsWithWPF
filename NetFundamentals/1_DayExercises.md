@@ -141,7 +141,7 @@ Schemat dla `n = 3`.
 
 1. Utwórz zmienną `exam`, która będzie zawierała wartość od 0 do 100.
 1. Zmienna `exam` przechowuje wyniki egzaminu.
-1. Utwórz kod, który wyświetli w konsoli ocenę z testu na podstawie zmiennej `point`, według poniższego schematu.
+1. Utwórz kod, który wyświetli w konsoli ocenę z testu na podstawie zmiennej `exam`, według poniższego schematu.
     * 0 - 39 pkt - `Ocena Niedostateczna`
     * 40 - 54 pkt - `Ocena Dopuszczająca`
     * 55 - 69 pkt - `Ocena Dostateczna`
@@ -155,12 +155,12 @@ Przykład: Dla point z wartością `57`, w konsoli powinno wyświetlić się `Oc
 
 #### Zadanie 5 ekstra
 
-Napisz program, który za pomocą instrukcj for sumuje liczby nieparzyste z przedizału od 1 do 100.
+Napisz program, który za pomocą instrukcj for sumuje liczby nieparzyste z przedziału od 1 do 100.
 
 
 #### Zadanie 6 ekstra
 
-Napisz program, któy za pomocą instrukcji for znajduje największą i najmniejszą liczbę ze zbioru `n` wylosowanych liczb całkowitych z przedziału od 0 do 99 (w zadaniu n = 5)
+Napisz program, który za pomocą instrukcji for znajduje największą i najmniejszą liczbę ze zbioru `n` wylosowanych liczb całkowitych z przedziału od 0 do 99 (w zadaniu n = 5)
 oraz oblicza średnią ze wszystkich wylosowanycg liczb.
 
 #### Zadanie 7 ekstra
@@ -170,7 +170,7 @@ Napisz program wyświetlający tabliczkę mnożenia dla liczb z przedziału od 1
 
 #### Zadanie 8 ekstra
 
-Napisz program, tóry wyświetla duże litery alfabetu od A do Z i od Z do A z wykorzystaniem pętli while. 
+Napisz program, który wyświetla duże litery alfabetu od A do Z i od Z do A z wykorzystaniem pętli while. 
 
 ### Kolekcje
 

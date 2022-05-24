@@ -13,14 +13,15 @@ Convert.ToInt32(Console.ReadLine());
 3. Przejdz do pliku `Program.cs` w projekcie Library.ConsoleApp
 4. Przed pętlą utwórz obiekt klasy `BooksService`
 5. W srodku pętli podmien wyswietlanie tekstow na wywołanie odpowiedniej metody z obiektu klasy `BooksService`
-6. Uruchom aplikację i sprawdz czy wsyzstko działa poprawnie
+6. Uruchom aplikację i sprawdz czy wszystko działa poprawnie
 
 #### Zadanie 5: Dodanie repozytorium
 
 1. Otwórz klasę `BooksRepository` znajdującą się w projekcie Library.Persistence
 2. Utwórz pole `readonly List<Book>` o nazwie _database
 3. Utwórz bezparametroy Konstruktor
-4. W konstruktorze dodaj kilka ksiązek, mozesz do tego użyć ("Stary człowiek i morze", "Ernest Hemingway", 1986, "AAAA", 10, 19.99m),
+4. W konstruktorze dodaj kilka ksiązek, mozesz do tego użyć 
+    new Book("Stary człowiek i morze", "Ernest Hemingway", 1986, "AAAA", 10, 19.99m),
     new Book("Komu bije dzwon", "Ernest Hemingway", 1997, "BBBB", 0, 119.99m),
     new Book("Alicja w krainie czarów", "C.K. Lewis", 1998, "CCCC", 53, 39.99m),
     new Book("Opowieści z Narnii", "C.K. Lewis", 1999, "DDDD", 33, 49.99m),
@@ -135,7 +136,7 @@ Convert.ToInt32(Console.ReadLine());
     Partsy mogą zwracac: "leg", "leg", "leg", "seat", "back", "bag of screws"
 11. Zaimplementu klasę o nazwie Adde (nazwa kszesła z Ikei)
 12. Klasa Adde powinna dziedziczyć po klasie `IkeaKit<Chair>`.
-13. W klasie Adde ustaw proper Tittle i Color odpowiednio na wartosci
+13. W klasie Adde ustaw proper Title i Color odpowiednio na wartosci
     "Adde" i "Cyan"
 14. Do propertisow klasy Adde dodaj slowo kluczowe override
     "public override string Title"
@@ -148,14 +149,14 @@ Convert.ToInt32(Console.ReadLine());
 
 1. Otwórz plik Book.cs znajdujący się w projekcie Library.Domain
 2. Ze wszystkich property skasuj operator set. 
-3. Dla property `ProductsAvailable` do operator set wraz z modyfikatorem prywatnosci private
+3. Dla property `ProductsAvailable` dodaj operator set wraz z modyfikatorem prywatności private
 4. Dodaj do klasy Book nową metodę, która będzie odpowiedzialna za modyfikację stanu magazynowego. Tą metodę nazwij: `ChangeProductsAvailableNumber(int change)`
 5. Przejdź do pliku BooksRepository w projekcie Library.Persistence i w metodzie ChangeState zmień ustawienie property na wywołanie metody z klasy Book
 6. Przejdź do pliku Order.cs w projekcie Library.Domain
 7. W propertach skasuj słowo kluczowe set
 8. Przejdź do pliku BookOrdered w projekcie Library.Domain
-9. Skasuj słowo klucozwe set w propertach
-10. Stwórz konstruktor, który musi zawierac dwa argumenty: Book(int bookId, int numberOrdered)
+9. Skasuj słowo kluczowe set w propertach
+10. Stwórz konstruktor, który musi zawierac dwa argumenty: BookOrdered(int bookId, int numberOrdered)
 11. Otwórz plik OrderService znajdujacy sie w projekcie Library.ConsoleApp
 12. Zmien w lini gdzie jest dodawana nowa pozycja zamowienia inicjalizacje klasy BookOrdered tak aby była zgodna z tym co przed chwilą było zrobione.     
 
