@@ -6,8 +6,8 @@
     - string Name { get; }
     - string Description { get; }
 4. Utwórz klasę Handler, która ma implementowac interfejs IHandler
-5. Utwórz w klasie Handler konstruktor z jednym parametrem. Ten paramter ma byc typu Action i nazywac sie logic
-6. Zapisz przekazany paramter do prywatnego pola w klasie o naziwe _logic
+5. Utwórz w klasie Handler konstruktor z jednym parametrem. Ten parametr ma byc typu Action i nazywac sie logic
+6. Zapisz przekazany paramter do prywatnego pola w klasie o nazwie _logic
 7. Wewnatz metody Handle uruchom wczesniej otrzymaną funckę _logic (ex: "_logic()")
 8. Utwórz klasę Command, która ma implementowac interfejs ICommand
 9. Klasa Command ma posiadac konstruktor, ktory przyjmuje dwa parametry: 
@@ -140,11 +140,12 @@ z danego typu, a następnie pobierze pole name
 
 #### Zadanie 1
 
-Używając kontrolek `Label`, `TextBox`, `Buton` napisz program, któy oblicza pole prostokątu. 
+Używając kontrolek `Label`, `TextBox`, `Buton` napisz program, który oblicza pole prostokątu. 
 
 #### Zadanie 2
 
-Używając kontrolek `Label`, `TextBox`, `Buton`, `ComboBox`, `CheckBox`, `Image`, stwórz konfigurator auta sojej ulubionej marki.
+Używając kontrolek `Label`, `TextBox`, `Buton`, `ComboBox`, `CheckBox`, `Image`, 
+stwórz konfigurator auta swojej ulubionej marki.
 
 
 #### Zadanie 3

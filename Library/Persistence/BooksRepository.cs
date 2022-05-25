@@ -20,6 +20,10 @@ namespace Persistence
                 new Book("Idiota", "Fiodor Dostojewski", 1950, "IIII", 89, 25.99m),
                 new Book("Mistrz i Małgorzata", "Michaił Bułhakow", 1965, "JJJJ", 41, 36.99m),
             };
+            foreach (var item in _database)
+            {
+                Database.Add(item);
+            }
         }
 
         //public void Insert(Book book)

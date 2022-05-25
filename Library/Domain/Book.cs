@@ -14,9 +14,19 @@
 
         public Book(string title, string author, int publicationYear, string isbn, int productsAvailable, decimal price)
         {
-            Title = title;
-            Author = author;
-            ISBN = isbn;
+ 
+                if (!string.IsNullOrWhiteSpace(title) && !string.IsNullOrWhiteSpace(author)
+                    && !string.IsNullOrWhiteSpace(isbn))
+                {
+                    Title = title;
+                    Author = author;
+                    ISBN = isbn;
+                }
+                else
+            {
+                //throw new Exception() 
+            }
+
             PublicationYear = publicationYear;
             ProductsAvailable = productsAvailable;
             Price = price;

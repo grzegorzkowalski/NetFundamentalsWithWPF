@@ -6,14 +6,7 @@ var login = Console.ReadLine();
 Console.WriteLine("Podaj hasło!");
 var password = Console.ReadLine();
 
-if (login == "Admin" && password == "password")
-{
-    Console.WriteLine("Access Granted");
-}
-else
-{
-    Console.WriteLine("Access Denied");  
-}
+Authorization(login, password);
 var repository = new BooksRepository();
 var booksService = new BooksService(repository);
 var orderRepository = new OrdersRepository();
@@ -29,9 +22,8 @@ procesor.RegisterNewAction(new Command("wyjdz", "wyjdz"), new Handler(() => Envi
 var command = "";
 while(!command.Equals("wyjdz"))
 {
-    DisplayMenu();
-    command = Console.ReadLine();
     NewMenuDisplay(procesor, command);
+    command = Console.ReadLine();
 }
 
 static void DisplayMenu()
@@ -44,6 +36,18 @@ static void DisplayMenu()
     Console.WriteLine("5. dodaj zamowienie");
     Console.WriteLine("6. lista zamowien");
     Console.WriteLine("7. lista zamowien");
+}
+
+static void Authorization(string login, string password)
+{
+    if (login == "Admin" && password == "password")
+    {
+        Console.WriteLine("Access Granted");
+    }
+    else
+    {
+        Console.WriteLine("Access Denied");
+    }
 }
 
 static void NewMenuDisplay(Procesor procesor, string? command)
